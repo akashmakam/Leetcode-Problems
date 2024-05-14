@@ -1,8 +1,5 @@
 // Link to problem: https://leetcode.com/problems/roman-to-integer/
 
-#include <stdio.h>
-#include <string.h>
-
 int romanToInt(char* s) {
     int length = strlen(s), sum = 0;
     for(int i = length - 1; i >= 0; i--) {
@@ -36,14 +33,4 @@ int romanToInt(char* s) {
         }
     }
     return sum;
-}
-
-int main() {
-    int num = 0;
-    char romanNumeral[100];
-    printf("\nEnter roman numeral: ");
-    scanf("%s", romanNumeral);
-    num = romanToInt(romanNumeral);
-    printf("%s = %d\n", romanNumeral, num);
-    return 0;
 }

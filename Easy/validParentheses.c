@@ -1,9 +1,5 @@
 // Link to problem: https://leetcode.com/problems/valid-parentheses/
 
-#include <stdio.h>
-#include <string.h>
-#include <stdbool.h>
-
 char pair(char s) {
     switch(s) {
         case ']': return '[';
@@ -34,16 +30,4 @@ bool isValid(char* s) {
         }
     }
     return top == -1;
-}
-
-int main() {
-    char s1[] = "{[()]}";
-    char s2[] = "{[(])}";
-    char s3[] = "{{{{{{";
-    char s4[] = "}";
-    printf("%s is %s\n", s1, isValid(s1) ? "valid" : "invalid");
-    printf("%s is %s\n", s2, isValid(s2) ? "valid" : "invalid");
-    printf("%s is %s\n", s3, isValid(s3) ? "valid" : "invalid");
-    printf("%s is %s\n", s4, isValid(s4) ? "valid" : "invalid");
-    return 0;
 }
