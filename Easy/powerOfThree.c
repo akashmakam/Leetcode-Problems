@@ -1,3 +1,5 @@
+// Link to problem: https://leetcode.com/problems/power-of-three
+
 bool isPowerOfThree(int n) {
     double logarithm = log(n) / log(3);
     int integerPart = (int)(logarithm + 0.5); // Round to the nearest integer

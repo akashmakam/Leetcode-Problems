@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/power-of-two
+
 bool isPowerOfTwo(int n) {
     double logarithm = log2(n);
     int integerPart = logarithm / 1.0;
