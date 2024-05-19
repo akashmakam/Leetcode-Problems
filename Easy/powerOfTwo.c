@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/power-of-two
+// Link to problem: https://leetcode.com/problems/power-of-two
 
 bool isPowerOfTwo(int n) {
     double logarithm = log2(n);
