@@ -13,3 +13,14 @@ int hammingDistance(int x, int y) {
         distance += ((x & (1 << i)) != 0)? 1 : 0;
     return distance;
 }
+
+
+class Solution(object):
+    def hammingDistance(self, x, y):
+        count = 0
+        for i in range(32):
+            a = x >> i
+            b = y >> i
+            if a & 1 != b & 1:
+                count += 1
+        return count
