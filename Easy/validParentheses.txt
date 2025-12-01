@@ -31,3 +31,21 @@ bool isValid(char* s) {
     }
     return top == -1;
 }
+
+class Solution(object):
+    def check(self, a, b):
+        return (a == "(" and b == ")") or \
+               (a == "[" and b == "]") or \
+               (a == "{" and b == "}")
+
+    def isValid(self, s):
+        stack = []
+        for c in s:
+            if c in "([{":
+                stack.append(c)
+            else:
+                if not stack:
+                    return False
+                if not self.check(stack.pop(), c):
+                    return False
+        return len(stack) == 0
