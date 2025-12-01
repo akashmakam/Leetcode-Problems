@@ -1,4 +1,4 @@
-# Link to problem: https://leetcode.com/problems/reverse-string/description/
+# Link to problem: https://leetcode.com/problems/reverse-string/
 
 class Solution(object):
   '''
