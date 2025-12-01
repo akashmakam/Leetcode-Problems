@@ -24,3 +24,7 @@ class Solution(object):
             if a & 1 != b & 1:
                 count += 1
         return count
+
+class Solution(object):
+    def hammingDistance(self, x, y):
+        return bin(x^y).count("1")
