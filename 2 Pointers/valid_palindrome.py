@@ -4,7 +4,7 @@ class Solution(object):
     def isPalindrome(self, s):
         '''
         Approach:
-        a. Remove alphanumeric characters from given string.
+        a. Remove non-alphanumeric characters from given string.
           i. Remove using re library.
           ii. Remove using isalnum() method.
         b. Convert string to lowercase.
@@ -12,7 +12,7 @@ class Solution(object):
           i. Compare reversed string with original string (s == s[::-1] method)
           ii. Use two pointers, start and end.
         '''
-        # a. Remove alphanumeric characters from given string. 
+        # a. Remove non-alphanumeric characters from given string. 
         # Using re library
         s = re.sub(r'[^a-zA-Z0-9]', '', s)
         # or
